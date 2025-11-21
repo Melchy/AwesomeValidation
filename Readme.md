@@ -12,7 +12,8 @@ Mame 4 soubory:
 Analyzator musi zakazat:
 
 * Prirazovani Should() or Validation.Fail() atd. do promenych - vcetne napr. ternarnich operatoru, selectu atd.
-* Definice validace nesmi pouzivat pritni promene, metody fieldy atd.
+* Definice validace nesmi pouzivat privatni promene, metody fieldy atd.
+* Definice validace nesmi pouzivat instancni promene
 * Definice validace nesmi byt v genericke tride pokud je to validator mimo Dto
 * Metoda pro definici musi vracet void
 * Custom validacni metody maji stejna omezeni popsana vysse
