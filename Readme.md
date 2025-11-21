@@ -9,11 +9,19 @@ Mame 4 soubory:
 
 ### Z Ai diskuze mame tyto pointy:
 
-Uzivatel musi tridy s validatorem definovat jako partial.
+Analyzator musi zakazat:
 
-Dalsi body:
-* Analyzer Rules (The Guard Rails)
-   You will use Roslyn Analyzers to enforce a Strict DSL, ensuring the Generator only receives code it can safely translate.
-   Rule 1 (No Assignments): Users cannot assign the result of Should() or Validation.Fail() to variables.
-   Rule 2 (No Complex Expressions): Validation logic cannot be used inside Ternary Operators (? :) or complex compound expressions.
-   Rule 3 (Enforce Partial): The class containing validation methods must be declared partial.
+* Prirazovani Should() or Validation.Fail() atd. do promenych - vcetne napr. ternarnich operatoru, selectu atd.
+* Definice validace nesmi pouzivat pritni promene, metody fieldy atd.
+* Definice validace nesmi byt v genericke tride pokud je to validator mimo Dto
+* Metoda pro definici musi vracet void
+* Custom validacni metody maji stejna omezeni popsana vysse
+
+Co se da ohandlovat:
+
+* Predcasny return - proste vratime aktualni errory
+* Genericka Dto - vygenerujeme generickou validate metodu
+* Async kod
+* Vnorene Dtocka
+* Automaticke dependency injection
+* Custom validacni metody - pomoci atributu. Take se transformuji - meni se jejich navratovy typ o predani dependency se stara uzivatel
