@@ -29,12 +29,16 @@ Co se da ohandlovat:
 
 ###  Napady 2.0
 
+#### Jak budou fungovat asserty?
+
 Package definuje pouze jeden assert:
 
 `Validation.Fail()`
 
 Vsechno ostatni jsou custom metody pouzivajici tuto validacni metodu.
 Validation Fail muze by chainovane - `Validation.Fail().WithMessage("Message")`
+
+Priklad definice assertu:
 
 ```csharp
 public static ValidationContinuation IsNotNullOrEmpty(this string str, [CallerArgumentExpression] callerExpression){
@@ -47,9 +51,9 @@ public static ValidationContinuation IsNotNullOrEmpty(this string str, [CallerAr
 }
 ```
 
-Generator tyhle meotdy vubec netransformuje.
+**Generator tyhle meotdy vubec netransformuje.**
 
-
+#### Jak bude vypadat validace?
 
 Validace je pak easy. Metody musi splnovat:
 
