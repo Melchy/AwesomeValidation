@@ -27,7 +27,7 @@ Co se da ohandlovat:
 * Custom validacni metody - pomoci atributu. Take se transformuji - meni se jejich navratovy typ o predani dependency se stara uzivatel
 
 
-### Dalsi myslenky
+###  Napady 2.0
 
 Package definuje pouze jeden assert:
 
