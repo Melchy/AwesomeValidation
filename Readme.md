@@ -62,10 +62,11 @@ Validace je pak easy. Metody musi splnovat:
 * Jako prni parametr musi brat to co validuji
 * Musi byt public
 * ValidationContinuation nesmi byt nikdy prirazeno do promene
-* Nesmi byt extension metody
+* Samy validacni metody nesmi byt extension metody
 
+Priklad:
 ```csharp
-public static void ValidationDefinition(User user)
+public static UserErrors ValidationDefinition(User user)
 {
     user.Name.IsNotNullOrEmpty().WithMessage("Bla bla");
 }
