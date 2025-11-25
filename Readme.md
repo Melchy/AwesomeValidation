@@ -58,7 +58,7 @@ public static ValidationContinuation IsNotNullOrEmpty(this string str, [CallerAr
 Validace je pak easy. Metody musi splnovat:
 
 * Musi byt static
-* Musi vracet UserErrors nebo Task<UserErrors>
+* Musi vracet UserErrors nebo `Task<UserErrors>`
 * Jako prni parametr musi brat to co validuji
 * Musi byt public
 * ValidationContinuation nesmi byt nikdy prirazeno do promene
