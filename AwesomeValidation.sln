@@ -6,10 +6,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder1", "Solution
 		ChatGptBrainstorm.md = ChatGptBrainstorm.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeValidationGenerator", "AwesomeValidationGenerator\AwesomeValidationGenerator.csproj", "{FD79D1BA-DB4F-4FF2-B92C-6D4E43B829E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeValidation", "AwesomeValidation\AwesomeValidation.csproj", "{38898A21-A2FE-497B-B264-F2A308A041D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeValidation.Tests", "AwesomeValidation.Tests\AwesomeValidation.Tests.csproj", "{318A593C-C557-4FCE-957E-C6CF76E69F4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD79D1BA-DB4F-4FF2-B92C-6D4E43B829E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD79D1BA-DB4F-4FF2-B92C-6D4E43B829E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD79D1BA-DB4F-4FF2-B92C-6D4E43B829E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD79D1BA-DB4F-4FF2-B92C-6D4E43B829E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38898A21-A2FE-497B-B264-F2A308A041D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38898A21-A2FE-497B-B264-F2A308A041D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38898A21-A2FE-497B-B264-F2A308A041D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38898A21-A2FE-497B-B264-F2A308A041D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{318A593C-C557-4FCE-957E-C6CF76E69F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{318A593C-C557-4FCE-957E-C6CF76E69F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{318A593C-C557-4FCE-957E-C6CF76E69F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{318A593C-C557-4FCE-957E-C6CF76E69F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 EndGlobal

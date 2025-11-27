@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="$(OutputPath)\net10.0\AwesomeValidationGenerator.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\AwesomeValidationGenerator\AwesomeValidationGenerator.csproj">
+            <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+            <IncludeAssets>AwesomeValidationGenerator.dll</IncludeAssets>
+        </ProjectReference>
+    </ItemGroup>
+</Project>
