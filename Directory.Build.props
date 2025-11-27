@@ -1,0 +1,9 @@
+﻿<Project>
+    <PropertyGroup>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+        <WarningsNotAsErrors>CS0618, NU1903, NU1902</WarningsNotAsErrors>
+        <NoWarn>NETSDK1138</NoWarn>
+    </PropertyGroup>
+</Project>
